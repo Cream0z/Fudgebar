@@ -44,7 +44,10 @@ nav a{
     text-decoration: none;
     color: #fff;
 }
-
+nav ul li:hover{
+    background-color: #094282;
+    box-shadow:#6d00ff;
+}
 .container{
 	max-width: 1170px;
 	margin:auto;
@@ -121,4 +124,44 @@ img{
 	.gallery .gallery-filter .filter-item{
 		margin-bottom: 10px;
 	}
+	nav ul{
+		position:fixed;
+		width: 88%;
+		top: 50px;        
+	}
+	  #mySidenav li {
+		position: absolute;
+		right: -80px;   
+		transition: 0.3s;
+		padding: 5px;
+		width: 135px;
+		text-decoration: none;
+		font-size: 15px;
+		color: white;
+		border-radius: 5px 0px 0px 5px;
+	  }
+	  
+	  #mySidenav li:hover {
+		right: 0px;
+	  }
+	  
+	  #home {
+		top: 0px;
+		background-color: #864ab8;
+	  }
+	  
+	  #studio {
+		top: 40px;
+		background-color: #2196F3;
+	  }
+	  
+	  #contact {
+		top: 80px;
+		background-color: #f44336;
+	  }
+	  
+	  #about {
+		top: 120px;
+		background-color: #55d6cb;
+	  }
 }

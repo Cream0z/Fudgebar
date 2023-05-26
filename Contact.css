@@ -39,28 +39,32 @@ nav a{
     text-decoration: none;
     color: #fff;
 }
-
+nav ul li:hover{
+    background-color: #094282;
+    box-shadow:#6d00ff;
+}
 .contact{
     position: relative;
-    min-height: 100vh;
+    
     padding: 50px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.contact .content
+.content
 {
     max-width: 800x;
     text-align: center;
+     margin-top: 5%;
 }
-.contact .content h2{
+.content h2{
     font-size: 36px;
     font-weight: 500;
     color: #fff;
 }
 
-.contact .content p{
+ .content p{
     font-weight: 300;
     color: #fff;
 }
@@ -104,7 +108,9 @@ nav a{
     flex-direction: column;
     font-weight: 300;
 }
-
+.container .box .text {
+    margin-left: 30px;
+}
 .container .contactInfo .box .icon .text h3{
     font-weight: 500;
     color: #00bcd4;
@@ -189,5 +195,53 @@ nav a{
     .contactForm
     {
         width: 100%;
+       
     }
+    .container .contactForm {
+        margin-top: 5%;
+    }
+
+    
+}
+@media(max-width: 767px){
+    nav ul{
+        position:fixed;
+        width: 90%;
+        top: 50px;      
+    }
+      #mySidenav li {
+        position: absolute;
+        right: -70px;   
+        transition: 0.3s;
+        padding: 5px;
+        width: 135px;
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        border-radius: 5px 0px 0px 5px;
+      }
+      
+      #mySidenav li:hover {
+        right: 0px;
+      }
+      
+      #home {
+        top: 0px;
+        background-color: #864ab8;
+      }
+      
+      #studio {
+        top: 33px;
+        background-color: #2196F3;
+      }
+      
+      #contact {
+        top: 66px;
+        background-color: #f44336;
+      }
+      
+      #about {
+        top: 99px;
+        background-color: #55d6cb;
+      }
 }
